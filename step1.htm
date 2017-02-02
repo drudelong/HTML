@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WrenchRover</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/bootstrap_wrenchrover.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  
+  <!-- Custom JavaScript -->
+  <script src="js/scripts.js"></script>
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-fixed-top" role="navigation">
+  <div class="container" style="height:100px;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.htm"><img src="images/WrenchRover_Logo_Web.png" class="img-responsive brand"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="centerSignup"><a href="#">Service Center Sign Up</a></li>
+        <li><a href="#">Sign Up!</a></li>
+        <li><a href="#">Log In</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+
+<!--/////////////////// INCLUDE CODE ABOVE INTO INDEX VIEW /////////////////////-->
+
+
+
+<!--/////////////////// INCLUDE CODE BELOW INTO STEP 1 VIEW /////////////////////-->
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row probBanner">
+        <!-- Main page content -->
+          <div class="col-md-12 col-sm-12">
+            <div class="col-md-6 col-sm-12">
+              <h1 class="light">Find a Mechanic.</h1>
+              <span class="mobileHide">
+              <h1 class="light">Book an Appointment.</h1>
+              <h1 class="light">And Relax.</h1><br>
+              <h3 class="light">It just takes a few easy steps to get you back on the road.</h3>
+              <h3 class="light">Certified shops pass a rigorous inspection by our master mechanics for quality work and competitive pricing.</h3>
+              <br><br></span>
+            </div>
+              <!-- Begin Vehicle Search API -->   
+            <div class="col-md-6 col-sm-12" style="background:URL('images/transparent.png');border:solid 1px black;height:auto;margin-top:25px;">
+              <h3>What type of vehicle to you have?</h3>
+              <div class="container" style="width:auto;height:auto;">
+                <form>
+                  <div class="form-group row">
+                    <div class="col-md-6 col-sm-12">
+                      <select class="form-control" id="a" onchange="showMe('b');"> 
+                        <option default>Year</option>
+                        <option>2017</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <select class="form-control" id="b" onchange="showMe('c');" disabled> 
+                        <option default>Make</option>
+                        <option>Chevy</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-6 col-sm-12">
+                      <select class="form-control" id="c" onchange="showMe('d');" disabled> 
+                        <option default>Model</option>
+                        <option>Malibu</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <select class="form-control" id="d" onchange="showMe('e');" disabled> 
+                        <option default>Trim</option>
+                        <option>LS</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-6 col-sm-12">
+                      <select class="form-control" id="e" onchange="showMe('f');" disabled> 
+                        <option default>Engine</option>
+                        <option>3.2L V6</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <input type="number" maxlength="6" min="1" max="999999" class="form-control" id="Vmileage1" placeholder="Mileage">
+                    </div>
+                  </div>
+                  <div class="form-group row text-center">
+                    <div class="col-md-12 col-sm-12">
+                      <hr class="vehicleHR">
+                    </div>
+                  </div> 
+                  <div class="form-group row">
+                    <div class="col-md-6 col-sm-12">
+                      <input type="text" maxlength="17" minlength="17" class="form-control" id="Vvin" placeholder="Vehicle VIN">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <input type="number" maxlength="6" min="1" max="999999" class="form-control" id="Vmileage2" placeholder="Mileage">
+                    </div>
+                  </div>
+                  <div class="form-group row text-center">
+                    <div class="col-md-12 col-sm-12">
+                      <button type="submit" class="btn btn-primary" style="width:100px;">START</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Homepage Marketing -->
+        <div class="row text-center" style="margin-top:40px;">
+          <div class="col-md-6 col-sm-12 hero-feature">
+            <div class="thumbnail">
+              <img src="http://placehold.it/120x80" alt="">
+              <div class="caption">
+                <h3>Feature Label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p><a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 hero-feature">
+            <div class="thumbnail">
+              <img src="http://placehold.it/120x80" alt="">
+              <div class="caption">
+                <h3>Feature Label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p><a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-6 col-sm-12 hero-feature">
+            <div class="thumbnail">
+              <img src="http://placehold.it/120x80" alt="">
+              <div class="caption">
+                <h3>Feature Label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p><a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12 hero-feature">
+            <div class="thumbnail">
+              <img src="http://placehold.it/120x80" alt="">
+              <div class="caption">
+                <h3>Feature Label</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p><a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+ 
+
+
+<!--/////////////////// INCLUDE CODE BELOW INTO FOOTER VIEW /////////////////////-->
+
+<!-- Start Footer -->
+<footer class="WRfooter">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 col-sm-3">
+        <ul class="WRfooterLinks">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Accounts</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <p>Designed and built with all the love in the world by the WrenchRover Team. Maintained by the core dev team with the help of our contributors.</p>
+        <p>Currently v1-alpha</p> 
+      </div>
+      <div class="col-md-3 col-sm-3"><p>Copyright &copy; WrenchRover 2017</p>
+      </div>
+  </div>
+</footer>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>    
+</html>  

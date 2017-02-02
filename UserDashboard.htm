@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WrenchRover</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/bootstrap_wrenchrover.css" rel="stylesheet">
+  <link href="css/custom.css" rel="stylesheet">
+  
+  <!-- Custom JavaScript -->
+  <script src="js/scripts.js"></script>
+  <script src="js/collapse.js"></script>
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-fixed-top" role="navigation">
+  <div class="container" style="height:100px;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.htm"><img src="images/WrenchRover_Logo_Web.png" class="img-responsive brand"></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="centerSignup"><a href="#">Service Center Sign Up</a></li>
+        <li><a href="#">Sign Up!</a></li>
+        <li><a href="#">Log In</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+
+<!--/////////////////// INCLUDE CODE ABOVE INTO INDEX VIEW /////////////////////-->
+
+
+
+<!--/////////////////// INCLUDE CODE BELOW INTO USER DASHBOARD VIEW /////////////////////-->
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+        <!-- Main page content -->
+			<div class="col-md-9 col-sm-9">
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<div>
+						<h1>Welcome back Dru!</h1>
+						We value you as a customer and strive to deliver a solution that is right for you.
+							<div style="background-color:#ddd;">You have a new appointment!</div>
+						<h3>Your Maintenance</h3>
+					<div>
+
+						<!-- Main page content -->
+            <main>
+  
+              <input id="tab1" type="radio" name="tabs" checked>
+              <label for="tab1">Pending Bids (8)</label>
+                
+              <input id="tab2" type="radio" name="tabs">
+              <label for="tab2">Accepted Bids (3)</label><!--count total entries-->
+                
+              <input id="tab3" type="radio" name="tabs">
+              <label for="tab3">Past Bids</label>
+                
+              <input id="tab4" type="radio" name="tabs">
+              <label for="tab4" class="appts">Appointments (2)</label>
+                
+              <section id="content1">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                <!-- Pending bids go here -->
+                  <button class="myaccordion"><b>8/22/16</b>&nbsp;&nbsp;&nbsp;Oil Change - Standard Oil</button>
+                  <div class="panel">
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12">
+                      Vehicle: Saturn Sky Redline 4cyl 108,000 miles 
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                          <div class='input-group date' id='datetimepicker1'>
+                            <input type='text' class="form-control" />
+                            <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <script type="text/javascript">
+                          $(function () {
+                              $('#datetimepicker1').datetimepicker();
+                          });
+                      </script>
+                      <div class="col-md-6 col-sm-12">
+                      Time and date entries populate here
+                      </div>
+                    </div> 
+                    <div class="form-group row" style="width:95%;">
+                      <div class="col-md-6 col-sm-12">
+                      <textarea class="form-control" style="width:95%;height:100px;" placeholder="Please be as descriptive as possible"></textarea>
+                      </div>
+                      <div class="col-md-6 col-sm-12 form-inline">
+                      <input type="number" maxlength="6" style="width:110px;" min="1" max="999999" class="form-control" placeholder="$75.00">
+                      <button type="button" class="btn btn-primary">Place Bid</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <button class="myaccordion"><b>8/21/16</b>&nbsp;&nbsp;&nbsp;Regular Maintenance - 30k Mile Service</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+
+                  <button class="myaccordion"><b>8/21/16</b>&nbsp;&nbsp;&nbsp;Oil Change - Full Synthetic</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+                  
+                  <button class="myaccordion"><b>8/19/16</b>&nbsp;&nbsp;&nbsp;AC Service - Recharge</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+                  
+                  <button class="myaccordion"><b>8/18/16</b>&nbsp;&nbsp;&nbsp;Tires - Wheel Alignment | Brakes - Pad Replacement</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+                  
+                  <button class="myaccordion"><b>8/12/16</b>&nbsp;&nbsp;&nbsp;Oil Change - Synthetic Blend | Warning Light - Check Engine</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+                  
+                  <button class="myaccordion"><b>8/10/16</b>&nbsp;&nbsp;&nbsp;Describe - "My car pulls to the right when I push the brakes while..."</button><!--set up char limit-->
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+                </div>
+              </div>
+              </section>
+                
+              <section id="content2">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                <!-- Active bids go here -->
+                  <button class="myaccordion"><b>8/29/16</b>&nbsp;&nbsp;&nbsp;Oil Change - Standard Oil | Warning Light - Oil</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+
+                  <button class="myaccordion"><b>8/28/16</b>&nbsp;&nbsp;&nbsp;Regular Maintenance - 30k Mile Service</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+
+                  <button class="myaccordion"><b>8/22/16</b>&nbsp;&nbsp;&nbsp;Oil Change - Full Synthetic</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+                </div>
+              </div>
+              </section>
+                
+              <section id="content3">
+              <div class="row">
+                <div class="col-md-12 col-sm-12">
+                <!-- Past bids go here -->
+                  <button class="myaccordion"><b>8/22/16</b>&nbsp;&nbsp;&nbsp;Oil Change - Standard Oil</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+
+                  <button class="myaccordion"><b>8/21/16</b>&nbsp;&nbsp;&nbsp;Regular Maintenance - 30k Mile Service</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+
+                  <button class="myaccordion"><b>8/21/16</b>&nbsp;&nbsp;&nbsp;Oil Change - Full Synthetic</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+                  
+                  <button class="myaccordion"><b>8/19/16</b>&nbsp;&nbsp;&nbsp;AC Service - Recharge</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+                  
+                  <button class="myaccordion"><b>8/18/16</b>&nbsp;&nbsp;&nbsp;Tires - Wheel Alignment | Brakes - Pad Replacement</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+                  
+                  <button class="myaccordion"><b>8/12/16</b>&nbsp;&nbsp;&nbsp;Oil Change - Synthetic Blend | Warning Light - Check Engine</button>
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+                  
+                  <button class="myaccordion"><b>8/10/16</b>&nbsp;&nbsp;&nbsp;Describe - "My car pulls to the right when I push the brakes while..."</button><!--set up char limit-->
+                  <div class="panel">
+                    <p>Content goes here<br>More content here<br>The rest of the content here</p>
+                  </div>
+                </div>
+              </div>
+              </section>
+
+            </main>
+     </div>
+
+<script>
+// THIS ACTIVATES THE ACCORDION FOR SERVICE CENTER PAGE
+var acc = document.getElementsByClassName("myaccordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+  }
+}
+</script>
+						
+						
+						</div>
+					</div>
+				</div>
+            </div>
+			<div class="col-md-3 col-sm-3" style="background-color:#ddd;">
+				<div>
+					<h3>Your Profile</h3>
+					<img src="images/user.png" style="float:left;margin-right:15px;"><br><h4>Dru Delong</h4>Member since 2016<br>
+					<a href="#" data-toggle="modal" data-target="#mysmallModal">Edit</a><br clear="all"><br>
+				</div>
+				<div>
+					<h3>Your Vehicle</h3>
+					<div style="float:left;margin-right:15px;">
+						<img src="images/car.png" style="float:left;margin-right:15px;">
+						<b>2008 Saturn Sky</b><br>
+						Redline 2dr 4cyl<br>
+						<a href="#" data-toggle="modal" data-target="#mysmallModal">Delete</a><br><br>
+					</div>
+				</div>
+				<div style="margin-top:50px;">
+					<button type="submit" class="btn btn-primary" style="width:auto;" data-toggle="modal" data-target="#mylargeModal">ADD NEW VEHICLE</button>
+					<br clear="all"><br>
+				</div>
+			</div>
+        </div>
+    </div>
+ 
+ 
+ <!-- Small Modal -->
+  <div class="modal fade" id="mysmallModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#ff6600;color:white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Confirm Remove Vehicle</h4>
+        </div>
+        <div class="modal-body">
+          <p>You are about to remove this vehicle. This action cannot be undone.
+		  <br><br><b>Are you sure?</b></p>
+        </div>
+        <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Yes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ <!-- Large Modal -->
+  <div class="modal fade" id="mylargeModal" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#ff6600;color:white;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add a New Vehicle</h4>
+        </div>
+        <div class="modal-body">
+
+		 <!-- Begin Vehicle Search API -->   
+              <h3>What type of vehicle to you have?</h3>
+              <div class="container" style="width:auto;height:auto;">
+                <form>
+                  <div class="form-group row">
+                    <div class="col-md-6 col-sm-12">
+                      <select class="form-control" id="a" onchange="showMe('b');"> 
+                        <option default>Year</option>
+                        <option>2017</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <select class="form-control" id="b" onchange="showMe('c');" disabled> 
+                        <option default>Make</option>
+                        <option>Chevy</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-6 col-sm-12">
+                      <select class="form-control" id="c" onchange="showMe('d');" disabled> 
+                        <option default>Model</option>
+                        <option>Malibu</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <select class="form-control" id="d" onchange="showMe('e');" disabled> 
+                        <option default>Trim</option>
+                        <option>LS</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-6 col-sm-12">
+                      <select class="form-control" id="e" onchange="showMe('f');" disabled> 
+                        <option default>Engine</option>
+                        <option>3.2L V6</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <input type="number" maxlength="6" min="1" max="999999" class="form-control" id="Vmileage1" placeholder="Mileage">
+                    </div>
+                  </div>
+                  <div class="form-group row text-center">
+                    <div class="col-md-12 col-sm-12">
+                      <hr class="vehicleHR">
+                    </div>
+                  </div> 
+                  <div class="form-group row">
+                    <div class="col-md-6 col-sm-12">
+                      <input type="text" maxlength="17" minlength="17" class="form-control" id="Vvin" placeholder="Vehicle VIN">
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <input type="number" maxlength="6" min="1" max="999999" class="form-control" id="Vmileage2" placeholder="Mileage">
+                    </div>
+                  </div>
+                </form>
+              </div>
+			
+        </div>
+        <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+<!--/////////////////// INCLUDE CODE BELOW INTO FOOTER VIEW /////////////////////-->
+
+<!-- Start Footer -->
+<footer class="WRfooter">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 col-sm-3">
+        <ul class="WRfooterLinks">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Accounts</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <p>Designed and built with all the love in the world by the WrenchRover Team. Maintained by the core dev team with the help of our contributors.</p>
+        <p>Currently v1-alpha</p> 
+      </div>
+      <div class="col-md-3 col-sm-3"><p>Copyright &copy; WrenchRover 2017</p>
+      </div>
+  </div>
+</footer>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>    
+</html>  

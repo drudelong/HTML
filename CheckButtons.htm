@@ -1,0 +1,56 @@
+<html>
+<head>
+<style>
+
+body {
+font-family: arial;
+}
+
+.chk-hidden {
+border: 0;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
+}
+
+label {
+margin: 5px;
+padding: 5px 10px;
+background-color: #ddd;
+color: #000;
+border-radius:8px;
+}
+
+input:focus + label {
+background-color: #ddd;
+color: #000;
+}
+
+input:checked + label {
+background-color: #ff6600;
+color: #fff;
+}
+
+input:focus:checked + label {
+background-color: #ff6600;
+color: #fff;
+}
+</style>
+</head>
+<body>
+<br><br><br><br>
+<input id="chk_oilstandard" type="checkbox" class="chk-hidden" value="Standard" />
+<label for="chk_oilstandard">Standard</label>
+  
+<input id="chk_oilblend" type="checkbox" class="chk-hidden" value="Synthetic Blend" />
+<label for="chk_oilblend">Synthetic Blend</label>
+
+<input id="chk_oilsynth" type="checkbox" class="chk-hidden" value="Synthetic" />
+<label for="chk_oilsynth">Synthetic</label>
+
+</body>
+</html>
