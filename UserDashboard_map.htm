@@ -1,0 +1,409 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WrenchRover</title>
+
+  
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <!--for Bootstrap CDN version-->
+    <!--or for Bootstrap local/server version: <link href="MegaNavbar/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> <!--for Font Awesome CDN version-->
+    <!--or for Font Awesome local/server version: <link href="MegaNavbar/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
+
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link rel="stylesheet" type="text/css" href="css/MegaNavbar.css"/>
+    <link rel="stylesheet" type="text/css" href="css/skins/navbar-grey-light.css" title="inverse">
+    <link rel="stylesheet" type="text/css" href="css/animation/animation.css" title="inverse">
+
+	 <!--- <link href="css/bootstrap_wrenchrover.css" rel="stylesheet"> -->
+	<link href="css/custom.css" rel="stylesheet">
+	
+    <link rel="shortcut icon" href="./favicon.ico" />
+
+    <!-- jQuery JavaScript CDN version (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--or for jQuery JavaScript local/server version: <script src="MegaNavbar/assets/plugins/jquery-1.11.1.min.js"></script>  -->
+
+    <!-- Latest compiled and minified Bootstrap JavaScript CDN version -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--or for Bootstrap JavaScript local/server version: <script src="MegaNavbar/assets/plugins/bootstrap/js/bootstrap.min.js"></script>  -->
+
+	<!-- Custom JavaScript -->
+	<script src="js/scripts.js"></script>
+  
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav class="navbar no-border navbar-default menu-lg navbar-fixed-top" role="navigation" style="height:100px; background:#fff;">
+	<div class="container">
+		<div class="navbar-header">
+			<ul class="nav navbar-nav navbar-left">
+			<a class="navbar-brand navbar-left" href="#"><span class="reverse"><img src="images/WrenchRover_Logo_Web.png" class="img-responsive brand"></span></a></ul>
+		</div>
+	<div>
+		<ul class="nav navbar-nav navbar-right">
+
+	<!-- ACCOUNT DROPDOWN -->
+
+			<li class="dropdown-grid" style="background:#fff;">
+			<a href="javascript:void(0);" id="ddaccount" data-toggle="dropdown" class="dropdown-toggle" style="float:right;"><i class="fa fa-user fa-1x"></i> <span class="hidden-xs">Account</span><span class="caret"></span></a>
+			<div class="dropdown-grid-wrapper" role="menu">
+				<ul class="dropdown-menu col-xs-12 col-sm-10 col-md-8 col-lg-7" style="border:0;">
+					<li>
+					<div id="carousel-example-account" class="carousel">
+						<div class="row">
+							<div class="col-lg-8 col-md-8 col-sm-8">
+								<div class="carousel-inner">
+									<div class="item active">
+										<h3 class="text-right"><i class="fa fa-lock"></i> Sign in</h3>
+										<form class="form-horizontal" role="form">
+											<div class="form-group">
+												<div class="col-sm-10 col-xs-12" style="float:right;">
+													<input class="input-sm form-control" id="inputEmail" placeholder="Email Address" />
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-sm-10 col-xs-12" style="float:right;">
+													<input type="password" class="input-sm form-control" id="inputPassword" placeholder="Password" />
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-sm-offset-3 col-sm-9">
+													<button class="btn btn-default pull-right" type="submit"><i class="fa fa-unlock-alt"></i> Sign in</button>
+													<p class="text-primary" data-target="#carousel-example-account"><small><a href="#">Forgot Username or Password?</a></small></p>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="item">
+										<h3 class="text-right"><i class="fa fa-user"></i> Create new account</h3><br />
+										<form class="form-horizontal" role="form">
+											<div class="form-group">
+												<label for="inputEmail" class="col-sm-5 control-label">Email</label>
+												<div class="col-sm-7">
+													<input class="input-sm form-control" id="inputEmail" />
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="inputPassword" class="col-sm-5 control-label">Password</label>
+												<div class="col-sm-7">
+													<input type="password" class="input-sm form-control" id="inputPassword" />
+												</div>
+											</div>
+											<div class="form-group">
+												<label for="inputPassword3" class="col-sm-5 control-label">Confirm password</label>
+												<div class="col-sm-7">
+													<input type="password" class="input-sm form-control" id="inputPassword3" />
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-sm-12">
+													<div class="checkbox">
+													<label><input type="checkbox" /> <small>I have read and agree to our<a href="javascript:void(0);">Terms of use</a> and <a href="javascript:void(0);">Privacy Policy</a>.</small></label>
+													</div>
+												</div>
+											</div>
+											<div class="form-group">
+												<div class="col-sm-offset-5 col-sm-7">
+												<button class="btn btn-default pull-right" type="submit"><i class="fa fa-save"></i> Create an account</button>
+												</div>
+											</div>
+										</form>
+									</div>
+									<div class="item">
+										<h3 class="text-right"><i class="fa fa-warning"></i> Forgotten your Username?</h3><br />
+										<p class="text-justify">Enter your email address, you signed up with (or entered in your settings), and we'll send you an email with your username.</p><br />
+										<form id="lost_password" method="post" class="form" role="form">
+											<div class="input-group">
+												<input class="form-control" /> <span class="input-group-btn"> 
+												<button class="btn btn-default" type="button">
+													<i class="fa fa-envelope"></i> Send it to me!
+												</button></span>
+											</div>
+										</form><br /><br />
+										<p class="text-justify"><small><i>If you've forgotten your username and password, you must first retrieve your username (using your email address) and then reset your password using those details.</i></small></p>
+									</div>
+									<div class="item">
+										<h3 class="text-right">
+										<i class="fa fa-warning"></i> Forgot your password?
+										</h3><br />
+										<p class="text-justify">Enter your username, and we'll send you an email with a link and instructions to reset your password. If you signed up without an email address (or removed it from settings), visit the FAQ.</p><br />
+										<form id="lost_password" method="post" class="form" role="form">
+											<div class="input-group">
+												<input class="form-control" /> <span class="input-group-btn"> 
+												<button class="btn btn-default" type="button">
+													<i class="fa fa-envelope"></i> Send it to me!
+												</button></span>
+											</div>
+										</form><br />
+										<p class="text-justify">
+										<small><i>If you've forgotten your username and password, you must first <span class="text-primary" data-target="#carousel-example-account">retrieve your username</span> (using your email address) and then reset your password using those details.</i></small>
+										</p>
+									</div>
+									<div class="item">
+									<h3 class="text-right">
+										<i class="fa fa-envelope"></i> Subscribe to our mailing list
+									</h3><br />
+									<p class="text-justify">
+										<i><small>Get the freebies from us and latest updates about YourApp! We hate spam as much as you do, trust us we won't give your details away to other people.</small></i>
+									</p><br />
+								<form class="form-horizontal" role="form">
+									<div class="form-group">
+										<label for="inputEmail" class="col-sm-5 control-label">Your email address</label>
+										<div class="col-sm-7">
+											<input class="input-sm form-control" id="inputEmail" name="inputEmail" />
+										</div>
+									</div>
+									<div class="form-group">
+										<label for="inputName" class="col-sm-5 control-label">Your Name</label>
+										<div class="col-sm-7">
+											<input class="input-sm form-control" id="inputName" name="inputName" />
+										</div>
+									</div><br />
+									<div class="form-group">
+										<div class="col-sm-offset-5 col-sm-7">
+											<button class="btn btn-default pull-right" type="submit">
+											<i class="fa fa-envelope-o"></i> Subscribe
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="item">
+								<h3 class="text-right">
+								<i class="fa fa-envelope"></i> Contact us
+								</h3><br />
+								<div class="row">
+								<form role="form">
+								<div class="col-xs-6 col-md-6 ">
+								<div class="form-group">
+								<input class="input-sm form-control" id="inputName" name="inputName" />
+								</div>
+								</div>
+								<div class="col-xs-6 col-md-6 ">
+								<div class="form-group">
+								<input type="password" class="input-sm form-control" id="inputEmail" name="inputEmail" />
+								</div>
+								</div>
+								<div class="col-xs-12 col-md-12 ">
+								<div class="form-group">
+								<input type="password" class="input-sm form-control" id="inputSubject" name="inputSubject" />
+								</div>
+								</div>
+								<div class="col-xs-12 col-md-12 ">
+								<div class="form-group">
+								<textarea class="form-control" id="inputMessage" name="inputMessage" rows="3">
+								</textarea>
+								</div>
+								</div>
+								<div class="form-group col-sm-offset-3 col-sm-9">
+
+								<button class="btn btn-default pull-right" type="submit">
+								<i class="fa fa-chevron-circle-right"></i> Submit
+								</button>
+								</div>
+	</form>
+	</div>
+	</div>
+	</div>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4">
+		<ol class="carousel-indicators navbar-carousel-indicators">
+			<li data-target="#carousel-example-account" data-slide-to="0">
+				<a href="javascript:void(0);"><span class="WRorange"><i class="fa fa-dashboard"></i>&nbsp;&nbsp;Your Dashboard</span><span class="desc reverse">Review your requests and more!</span></a>
+			</li>
+			<li data-target="#carousel-example-account" data-slide-to="1">
+				<a href="javascript:void(0);"><span class="WRorange"><i class="fa fa-gears"></i>&nbsp;&nbsp;Sign Up</span><span class="desc reverse">Create new account</span></a>
+			</li>
+			<li data-target="#carousel-example-account" data-slide-to="2">
+				<a href="javascript:void(0);"><span class="WRorange"><i class="fa fa-phone"></i>&nbsp;&nbsp;Contact us</span><span class="desc reverse">If you have any questions ...</span></a>
+			</li>
+		</ol>
+	</div>
+	</div>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</li>
+	</ul>
+	</div>
+	</div>
+</nav>
+
+<!--/////////////////// INCLUDE CODE ABOVE INTO INDEX VIEW /////////////////////-->
+
+<style>
+.nav-tabs {border:0;}
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {border-width:0; background:#ff6600 !important;}
+    .nav-tabs > li > a {border: none; color: #fff; background:#aaa;}
+        .nav-tabs > li.active > a, .nav-tabs > li > a:hover {border: none; color: #fff !important; background:#ff6600;}
+        .nav-tabs > li > a::after {content:""; background:#aaa; height:2px; position:absolute; width:100%; left:0px; transition:all 250ms ease 0s; transform:scale(0);}
+    .nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after { transform:scale(0); }
+.tab-nav > li > a::after {background:#000 none repeat scroll 0% 0%; color:#fff;}
+.tab-pane {padding:2px 0;}
+.tab-content{padding:8px; overflow: scroll; height:200px;}
+
+.userRow {background-color:#ddd; line-height:auto;}
+.userText {vertical-align:middle;}
+
+.apptRow {height:auto; background-color:#ff6600;}
+.apptHead {padding:2px 4px; background-color:#222; color:#fff;}
+.apptText {padding:2px 4px; color:#fff;}
+
+</style>
+
+<!--/////////////////// INCLUDE CODE BELOW INTO USER DASHBOARD VIEW /////////////////////-->
+<main>
+
+<div class="container" style="margin-top:115px;">
+<!--/////////////////// START USER  PROFILE ROW /////////////////////-->
+	<div class="row userRow">
+		<div class="col-md-6 col-sm-6 userText">
+			<div style="float:left;padding:9px 0px;margin-right:15px;"><i class="fa fa-user fa-3x"></i></div>
+			<div style="padding:12px 0px;"><b>Dru Delong</b><br>Member since 2016</div>
+		</div>
+		<div class="col-md-6 col-sm-6 userText">
+			<div style="float:left;padding:9px 0px;margin-right:15px;"><i class="fa fa-car fa-3x"></i></div>
+			<div style="padding:12px 0px;"><b>2008 Saturn Sky</b><br>Redline 2dr 4cyl</div>
+		</div>
+	</div>
+<!--/////////////////// START WELCOME MESSAGE ROW /////////////////////-->
+	<div class="row">
+		<div class="col-md-12 col-sm-12">
+			<h1>Welcome back Dru!</h1>
+			We value you as a customer and strive to deliver a solution that is right for you.<br><br>
+		</div>
+	</div>
+<!--/////////////////// START NOTIFICATION ROW /////////////////////-->
+	<div class="row apptRow">
+		<div class="col-md-2 col-sm-12 apptHead" style="line-height:80px;height:80px;text-align:center;">
+			<h4>You have a new appointment!</h4>
+		</div>
+		<div class="col-md-4 col-sm-12" style="padding:0;">
+			<div class="apptHead">Where & When</div>
+			<div class="apptText">Chucks Auto Repair<br>Tuesday, Feb 3 at 1:30pm</div>
+		</div>
+		<div class="col-md-3 col-sm-12" style="padding:0;">
+			<div class="apptHead">Your Vehicle</div>
+			<div class="apptText">2008 Saturn Sky<br>Redline 2dr 4cyl</div>
+		</div>
+		<div class="col-md-3 col-sm-12" style="padding:0;">
+			<div class="apptHead">Services</div>
+			<div class="apptText">Oil Change<br>Synthetic Blend</div>
+		</div>
+	</div>
+<!--/////////////////// START MAINTENANCE LISTINGS COLUMN /////////////////////-->
+	<div class="row">
+		<div class="col-md-12 col-sm-12">
+			<h3>Your Maintenance</h3>
+			<ul class="nav nav-tabs">
+			  <li class="active"><a data-toggle="tab" href="#mainPending">PENDING</a></li>
+			  <li class="inactive"><a data-toggle="tab" href="#mainHistory">HISTORY</a></li>
+			</ul>
+			<div class="tab-content" style="border:solid 2px #ff6600;">
+				<div id="mainPending" class="tab-pane fade in active">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+						<b>8/22/16 - Oil Change Synthetic Blend | Brake Inspection</b><br>
+						Your comments: <i>"I think my rotors are worn because my car pulls the the left when I apply the brakes"</i><br>
+						Service Notes: <i>"We will inspect the discs and pads thoroughly"</i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+						Service Center: <b>Juffy Lube</b>
+						</div>
+						<div class="col-md-6 col-sm-12">
+						Bid Amount: <b>$85.00</b>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+						<span style="color:#ff6600; font-weight:bold;">PENDING</span>
+						</div>
+					</div>
+				</div>
+				<div id="mainHistory" class="tab-pane fade">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+						<b>7/15/16 - Tire Rotation</b><br>
+						Service Notes: <i>"We can also look at wear and tear on your tires"</i>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 col-sm-12">
+						Service Center: <b>Joe's Auto</b>
+						</div>
+						<div class="col-md-6 col-sm-12">
+						Bid Amount: <b>$27.00</b>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+						<span style="color:#ff6600; font-weight:bold;">COMPLETE</span>
+						</div>
+					</div>
+			</div>
+		</div>
+<!--/////////////////// START YOUR LOCATION COLUMN /////////////////////-->
+		<div class="col-md-4 col-sm-12">
+			<h3>Your Location</h3>
+			<img src="https://mailinglists.com/sites/default/files/GoogleMap2_small.gif" style="width:300px;">
+		</div>
+	</div>
+</div>
+</main>
+ 
+<!--/////////////////// INCLUDE CODE BELOW INTO FOOTER VIEW /////////////////////-->
+
+<!-- Start Footer -->
+<footer class="WRfooter">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-sm-3">
+        <ul class="WRfooterLinks">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Accounts</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-3">
+        <p>Designed and built with all the love in the world by the WrenchRover Team. Maintained by the core dev team with the help of our contributors.</p>
+        <p>Currently v1-alpha</p> 
+      </div>
+      <div class="col-md-3 col-sm-3"><p>Copyright &copy; WrenchRover 2017</p>
+      </div>
+  </div>
+</footer>
+    <!-- jQuery JavaScript CDN version (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!--or for jQuery JavaScript local/server version: <script src="MegaNavbar/assets/plugins/jquery-1.11.1.min.js"></script>  -->
+
+    <!-- Latest compiled and minified Bootstrap JavaScript CDN version -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--or for Bootstrap JavaScript local/server version: <script src="MegaNavbar/assets/plugins/bootstrap/js/bootstrap.min.js"></script>  -->
+
+</body>    
+</html>  
